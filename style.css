@@ -164,7 +164,13 @@ hr {
     left: 1.5vw;
     display: flex;
 }
-
+.longminilogo {
+    height: clamp(50px, 10vw, 100px);
+    position: absolute;
+    top: -30px;
+    left: 1.5vw;
+    display: flex;
+}
 .header {
     display: flex;
     align-items: center;
@@ -211,6 +217,30 @@ hr {
     .minilogo {
         display: none;
     }
+    @media (max-width: 980px) {
+    .minilogo {
+        display: block;
+    }
+}
+}
+.longminilogo {
+    display: block;
+    }
+
+    @media (max-width: 1880px) {
+    .minilogo {
+        display: none;
+    }
+    @media (max-width: 1370px) {
+    .minilogo {
+        display: block;
+    }
+    @media (max-width: 1020px) {
+    .minilogo {
+        display: none;
+    }
+}
+}
 }
 
 .image {
@@ -247,7 +277,7 @@ use this for the above fullscreen image code
     <input type="checkbox" id="fullscreen">
 
 <label for="fullscreen">
-    <img src="/images/phonix ss 31 1.jpg" class="coverimg">
+    <img src="../latavis v2 2026-10-12/images/phonix ss 31 1.jpg" class="coverimg">
 </label>
 */
 
